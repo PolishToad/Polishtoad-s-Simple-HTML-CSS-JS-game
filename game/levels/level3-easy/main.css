@@ -1,0 +1,67 @@
+body {
+    background-color: black;
+    color: white;
+
+    font-family: monospace;
+}
+
+.shush {
+    color: rgb(10, 10, 10);
+}
+
+.gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gameBox {
+    border: 16px outset black;
+    background-image: url(../assets/tile-easy.png);
+    image-rendering: pixelated;
+    background-size: 64px;
+}
+
+.instructionBox {
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* ACTUAL GAME ELEMENTS */
+#gameGrid {
+    display: grid;
+}
+
+.block {
+    display: block;
+    width: 64px;
+    height: 64px;
+}
+
+.playerBox {
+    background-image: url(../assets/player-down.png);
+    z-index: 2;
+}
+
+.crate {
+    background-image: url(../assets/crate.png);
+    transform: translateY(-5px);
+    box-shadow: 0px 5px darkslategrey;
+    z-index: 3;
+}
+
+.boxWinBlock {
+    background-image: url('../assets/boxWinBlock.png');
+}
+
+.playerWinBlock {
+    display: none;
+    background-image: url('../assets/playerWinBlock.png');
+}
+
+.wall {
+    background-image: url('../assets/brick.png');
+}
